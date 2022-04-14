@@ -1,0 +1,389 @@
+
+:root {
+    --backgr-color: #E5E5E5;
+    --border-color: #ECECEC;
+    --brand-color: #212121;
+    --focus-color: #2196F3;
+    --title-color: #FFFFFF;
+    --main-color:  #2F303A;
+    --text-color:  #757575;
+    --btn-color:   #F5F4FA;
+
+}
+
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--backgr-color);
+    margin: 0;
+}
+
+h1,h2,h3,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+
+strong {
+    color: var(--focus-color);
+}
+
+.menu__list {
+   display: flex;
+   margin-left: 93px;
+}
+
+.menu__item:not( :last-child) {
+    margin-right: 50px;
+}
+
+.menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--brand-color);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    color:var(--focus-color);
+}
+
+.contacts__list {
+    display: flex;
+    margin-left: auto;
+}
+.contacts__list .contacts__item + .contacts__item{
+    margin-left: 50px;
+}
+
+.mail,
+.phone {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em; 
+}
+
+.mail:hover,.mail:focus,
+.phone:hover, .phone:focus {
+    color: var(--focus-color);
+}
+
+
+/*------------ Studio ----------------*/
+
+.title {
+     background-color: var(--main-color);
+     padding-bottom: 200px;
+}
+
+.title__main {
+    padding-top: 200px;
+    
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.title__btn {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--focus-color);
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.about {
+    padding-bottom: 0px;
+}
+
+.content__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+}
+
+.content__item {
+    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.content__item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.content__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+
+    margin-bottom: 10px;
+}
+
+.content__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.about__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about__item {
+    margin-right: 30px;
+}
+
+.about__item:last-child {
+    margin-right: 0px;
+}
+
+.about__title,
+.team__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+
+    margin-bottom: 50px;
+}
+
+.section.team {
+    background-color: var(--btn-color);
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.team__item {
+    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.team__photo {
+    margin-bottom: 30px;
+}
+
+.team__item:nth-child(4n) {
+margin-right: 0px;
+}
+
+.team__item p {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+
+.team__item p + p {
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+
+
+/*------------------- Footer --------------------*/
+
+.footer {
+    background-color: var(--main-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    color: var(--title-color);
+    font-style: initial;
+    
+    margin-bottom: 20px;
+}
+
+.address__item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+/*------------ Portfolio ----------------*/
+
+.main__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main__item button {
+    display: block;
+
+    border-radius: 4px;
+    border: none;
+    background-color: var(--btn-color);
+    color: var(--brand-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.main__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.main__item button:hover,
+.main__item button:focus {
+    background-color: var(--focus-color);
+    color: var(--btn-color);
+}
+
+.main__btn-first {
+    width: 73px;
+    height: 38px;
+}
+
+.main__btn-second {
+    width: 129px;
+    height: 38px;
+}
+
+.main__btn-third {
+    width: 145px;
+    height: 38px;
+}
+
+.main__btn-fourth {
+    width: 103px;
+    height: 38px;
+}
+
+.main__btn-fifth {
+    width: 130px;
+    height: 38px;
+}
+
+.section__images-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.section__images-item {
+   margin-right: 30px;
+   margin-bottom: 30px;
+}
+
+.section__images-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.section__images-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.section__images-item p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--brand-color);
+}
+
+.section__images-item p + p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.section__images-item figcaption {
+    padding: 20px 24px 54px;
+}
