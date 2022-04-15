@@ -8,12 +8,13 @@
     --main-color:  #2F303A;
     --text-color:  #757575;
     --btn-color:   #F5F4FA;
+    --border-img-color: #EEEEEE;
 
 }
 
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
-    color: var(--backgr-color);
+    background-color: var(--title-color);
     margin: 0;
 }
 
@@ -39,6 +40,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -230,22 +232,21 @@ strong {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-figure {
+.team__item figure {
+    width: 270px;
     margin: 0;
     padding: 0;
-}
-
-.team__photo {
-    margin-bottom: 30px;
+    background-color: var(--title-color)
 }
 
 .team__item:nth-child(4n) {
-margin-right: 0px;
+    margin-right: 0px;
 }
 
-.team__item p {
+.team__name {
+    padding-top: 30px;
     margin-bottom: 10px;
-
+    
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
@@ -254,9 +255,11 @@ margin-right: 0px;
     color: var(--brand-color);
 }
 
-.team__item p + p {
+.team__job {
     font-weight: 400;
     color: var(--text-color);
+    padding-bottom: 90px;
+    text-align: center;
 }
 
 
@@ -323,41 +326,23 @@ margin-right: 0px;
     color: var(--btn-color);
 }
 
-.main__btn-first {
-    width: 73px;
-    height: 38px;
-}
-
-.main__btn-second {
-    width: 129px;
-    height: 38px;
-}
-
-.main__btn-third {
-    width: 145px;
-    height: 38px;
-}
-
-.main__btn-fourth {
-    width: 103px;
-    height: 38px;
-}
-
-.main__btn-fifth {
-    width: 130px;
-    height: 38px;
+.main__btn {
+    padding: 6px 22px;
 }
 
 .section__images-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-top: 50px;
 }
 
 .section__images-item {
    margin-right: 30px;
    margin-bottom: 30px;
+}
+
+.section__images-item figure {
+    margin: 0;
 }
 
 .section__images-item:nth-child(3n) {
@@ -368,7 +353,15 @@ margin-right: 0px;
     margin-bottom: 0px;
 }
 
+.section__images-item figcaption {
+    padding: 0 24px;
+    border-left: 1px solid var(--border-img-color);
+    border-right: 1px solid var(--border-img-color);
+    border-bottom: 1px solid  var(--border-img-color);
+}
+
 .section__images-item p {
+    padding-top: 20px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -377,6 +370,10 @@ margin-right: 0px;
 }
 
 .section__images-item p + p {
+    margin-top: 4px;
+    padding-bottom: 20px;
+
+    padding-top: 0px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -384,6 +381,3 @@ margin-right: 0px;
     color: var(--text-color);
 }
 
-.section__images-item figcaption {
-    padding: 20px 24px 54px;
-}
