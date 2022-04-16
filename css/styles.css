@@ -38,7 +38,7 @@ header {
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -381,3 +381,6 @@ strong {
     color: var(--text-color);
 }
 
+.section__photo {
+    display: block;
+}
