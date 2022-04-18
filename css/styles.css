@@ -141,6 +141,7 @@ strong {
     border: none;
     background-color: var(--focus-color);
     color: var(--title-color);
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
@@ -160,13 +161,12 @@ strong {
 
 .content__list {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
+    justify-content: space-between;
 }
 
 .content__item {
     margin-right: 30px;
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: 270px;
 }
 
 .content__item:nth-child(4n) {
@@ -258,7 +258,7 @@ strong {
 .team__job {
     font-weight: 400;
     color: var(--text-color);
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -285,6 +285,10 @@ strong {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6); 
+}
+
+.address__item:first-child {
+    color: var(--title-color);
 }
 
 .address__item:not(:last-child) {
